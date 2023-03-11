@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.aside-left {
+    width: 78%;
+    z-index: -99;
+}
+
+.blank {
+    width: 100%;
+    height: 83px;
+    background: rgb(236, 236, 236);
+}
+
+.aside-right {
+    width: 22%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.artopicon {
+    background: rgba(148, 142, 142, 0.205);
+    padding-bottom: 5px;
+}
+
+.artoprow1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    border-radius: 0px 0px 15px 15px;
+    margin: 0px 2%;
+}
+
+.artoprow1 p {
+    padding: 7px 8px;
+    font-size: 13px;
+    border-right: 1px solid white;
+}
+
+.artoprow1 p i {
+    background: green;
+    font-size: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.artoprow1>p:last-child {
+    border: none;
+}
+
+.artoprow2 {
+    padding: 9px;
+    background: #003f72;
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+    color: white;
+    margin: 7px auto;
+    font-size: 13px;
+}
+
+.artoprow2 i {
+    margin-right: 5px;
+}
+
+.arform p {
+    text-align: center;
+    padding: 10px;
+}
+
+.arform label {
+    width: 100%;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.529);
+
+}
+
+.arform input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.265);
+    border-bottom: 1px solid rgb(0, 0, 0, 0.265);
+    outline: none;
+    font-size: 24px;
+}
+
+.arform button {
+    padding: 5px;
+    background: #003f72;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    animation: Updown 3s infinite linear;
+}
+
+@keyframes Updown {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.logo {
+    padding: 0 7px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 78%;
+    font-size: 18px;
+    background: white;
+    z-index: 99;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.125);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li {
+    color: black;
+    padding: 27px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.fa-circle-down {
+    animation: brochure 1s infinite linear;
+}
+
+@keyframes brochure {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.home {
+    font-size: 20px;
+    background: #003f72;
+    padding: 25px 25px;
+}
+
+.home a {
+    color: white;
+
+}
+
+.banner {
+    background: url(assets/img/banner/banner11.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.poster {
+    position: absolute;
+    z-index: 0;
+    width: 360px;
+    height: 400px;
+    background: white;
+    margin: 15px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+.posterp1 {
+    color: #003f72;
+    font-size: 20px;
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.poster h1 {
+    font-size: 30px;
+}
+
+.poster h5 {
+    font-size: 18px;
+}
+
+.banerp3 {
+    color: rgba(0, 0, 0, 0.613);
+    padding: 5px 0;
+    line-height: 20px;
+}
+
+.poster h2 {
+    padding: 5px 0
+}
+
+.posterp4 {
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.572);
+}
+
+.btn4 {
+    width: 100%;
+    padding: 9px;
+    background: #003f72;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn5 {
+    width: 50%;
+    padding: 5px;
+    background: #003f72;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    animation: Updown 3s infinite linear;
+}
+
+.container {
+    width: 78%;
+    border: 1px solid rgba(255, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.088);
+}
+
+.sec1 {
+    padding-left: 20px;
+    margin-right: 20px;
+    background: white;
+    margin-top: 50px;
+    padding: 20px 10px;
+    padding-left: 30px;
+}
+
+.sec1 h1 {
+    color: #003f72;
+    font-size: 40px;
+}
+
+.sec1list {
+    display: flex;
+    column-gap: 130px;
+    padding-left: 15px;
+    line-height: 25px;
+
+}
+
+.sec1 p {
+    line-height: 25px;
+    width: 90%;
+}
+
+.overview {
+    color: #003f72;
+    font-size: 40px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -140px;
+    right: - 40;
+}
+
+.sec1veido {
+    margin-top: 30px;
+}
+
+.sec1veido button {
+    padding: 10px 30;
+    color: #003f72;
+    margin: 20px 0;
+}
+
+.art2 {
+    padding-left: 20px;
+    margin-right: 20px;
+    background: white;
+    margin-top: 30px;
+    padding: 20px 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+
+tr td {
+    text-align: center;
+}
+
+.costingdatels {
+    padding: 15px 40;
+    background: #003f72;
+    color: white;
+    border: none;
+    margin: 20px 0;
+    position: absolute;
+    right: 100px;
+}
+
+.tablebtn {
+    color: white;
+    margin: 10px;
+    background: #003f72;
+    border-radius: 5px;
+}
+
+.price {
+    color: #003f72;
+    font-size: 40px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.sec2 {
+    padding-left: 20px;
+    margin-right: 20px;
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 20px 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.sec2>P {
+    padding: 20PX 0;
+    font-size: 20PX;
+}
+
+.sec2img {
+    display: table;
+    position: relative;
+}
+
+.sec2row {
+    display: flex;
+    column-gap: 10px;
+    overflow: hidden;
+}
+
+.sec2img p {
+    background: #003f72;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+
+.sec2hove {
+    position: absolute;
+    width: 280px;
+    height: 250PX;
+    top: 335px;
+    border: 1px solid black;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.445);
+    transition: all .7s;
+    bottom: 100%;
+}
+
+
+.sec2img:hover .sec2hove {
+    top: 0;
+}
+
+.sec2img:hover .enqnow {
+    top: 130px;
+}
+
+.enqnow {
+    position: absolute;
+    top: -45px;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(28, 19, 19);
+    transition: all .8s;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    width: 180px;
+    left: 20%;
+}
+
+
+
+.sec2right {
+    position: relative;
+    transform: rotate(90deg);
+    color: #003f72;
+    font-size: 40px;
+    right: -450px;
+    top: 170px;
+}
+
+.sec3 {
+    padding-left: 20px;
+    margin-right: 20px;
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 30px 10px;
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40PX;
+    position: relative;
+}
+
+
+.row1item {
+    width: 378px;
+    display: flex;
+    margin: 10PX 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.271);
+}
+
+.sec3r1 img {
+    height: 70PX;
+    margin: 0 20px;
+    padding-bottom: 10px;
+}
+
+.sec3r1 p {
+    font-size: 20px;
+}
+
+.sec3right {
+    position: absolute;
+    transform: rotate(90deg);
+    color: #003f72;
+    font-size: 40px;
+    right: -40;
+    top: 100;
+}
+
+.sec4 {
+    padding-left: 20px;
+    margin-right: 20px;
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 30px 10px;
+    padding-left: 30px;
+}
+
+.sec4 p {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.locotion {
+    color: #003f72;
+    font-size: 40px;
+    transform: rotate(90deg);
+    position: relative;
+    right: -461;
+    top: -25px;
+}
+
+.sec5 {
+    padding-left: 20px;
+    margin-right: 20px;
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 30px 10px;
+    padding-left: 30px;
+}
+
+.virtualtout {
+    background: url(assets/img/tour.jpg)no-repeat center center;
+    background-size: cover;
+    width: 93%;
+    height: 600px;
+}
+
+.virtualvdo {
+    text-align: center;
+    top: 30%;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.virtualvdo i {
+    padding: 20px 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+    color: rgba(6, 6, 6, 0.496);
+    background: rgb(255, 255, 255);
+}
+
+.virtualvdo p {
+    font-size: 20px;
+}
+
+.virtualtout:hover .fa-play {
+    padding: 20px 25px;
+    font-size: 50px;
+    transition: .5s linear;
+
+}
+
+.virtualtout:hover .virtual {
+    transition: all .5s linear;
+    font-size: 30px;
+}
+
+.sec5rgt {
+    color: #003f72;
+    font-size: 40px;
+    transform: rotate(90deg);
+    position: relative;
+    right: -459px;
+    top: -131px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: rgba(5, 6, 6, 0.568);
+}
+
+.footer span {
+    color: #007bff;
+}
